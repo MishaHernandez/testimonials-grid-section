@@ -6,6 +6,8 @@ body {
     font-size: 13px;
     font-family: 'Barlow Semi Condensed', sans-serif;
     padding: 1rem;
+    margin-top: 70px;
+    margin-bottom: 70px;
     background-color: var(--light-grayish-blue);
     min-height: 100vh;
 
@@ -26,4 +28,8 @@ body {
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: auto;
     gap: 1.5rem;
+    
+    @include desktop {
+        column-gap: 2rem;
+    }
 }

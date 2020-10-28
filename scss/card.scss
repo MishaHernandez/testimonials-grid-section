@@ -2,6 +2,7 @@
     // General card styles
     padding: 1.5rem 2rem;
     border-radius: 8px;
+    box-shadow: 1rem 8px 1.5rem rgba(207, 207, 207, .5);
 
     grid-column: 1/-1;
 
@@ -10,7 +11,7 @@
         background-color: var(--moderate-violet);
         background-image: url(../images/bg-pattern-quotation.svg);
         background-repeat: no-repeat;
-        background-position: 200px top;
+        background-position: 90% top;
         
         @include tablet {
             grid-column: span 4;
@@ -107,7 +108,6 @@
 
         p {
             color: var(--very-dark-grayish-blue);
-
             &:last-child {
                 color: gray;
             }
@@ -135,7 +135,7 @@
             }
         }
     }
-    
+
     &__testimonial {
         &-title {
             color: var(--light-grayish-blue);

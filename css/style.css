@@ -16,6 +16,8 @@ body {
   font-size: 13px;
   font-family: "Barlow Semi Condensed", sans-serif;
   padding: 1rem;
+  margin-top: 70px;
+  margin-bottom: 70px;
   background-color: var(--light-grayish-blue);
   min-height: 100vh;
   display: flex;
@@ -37,17 +39,23 @@ body {
   grid-template-rows: auto;
   gap: 1.5rem;
 }
+@media (min-width: 1160px) {
+  .container {
+    column-gap: 2rem;
+  }
+}
 
 .card {
   padding: 1.5rem 2rem;
   border-radius: 8px;
+  box-shadow: 1rem 8px 1.5rem rgba(207, 207, 207, 0.5);
   grid-column: 1/-1;
 }
 .card:nth-child(1) {
   background-color: var(--moderate-violet);
   background-image: url(../images/bg-pattern-quotation.svg);
   background-repeat: no-repeat;
-  background-position: 200px top;
+  background-position: 90% top;
 }
 @media (min-width: 650px) {
   .card:nth-child(1) {
