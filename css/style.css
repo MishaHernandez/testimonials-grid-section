@@ -15,6 +15,67 @@ body {
   box-sizing: inherit;
   font-size: 13px;
   font-family: "Barlow Semi Condensed", sans-serif;
+  padding: 1rem;
+  background-color: var(--light-grayish-blue);
+}
+
+.card {
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+}
+.card:nth-child(1) {
+  background-color: var(--moderate-violet);
+  background-image: url(../images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 200px top;
+}
+.card:nth-child(2) {
+  background-color: var(--very-dark-grayish-blue);
+}
+.card:nth-child(3), .card:nth-child(5) {
+  background-color: var(--white);
+}
+.card:nth-child(3) h2, .card:nth-child(5) h2 {
+  color: var(--very-dark-blackish-blue);
+  opacity: 0.7;
+}
+.card:nth-child(3) p, .card:nth-child(5) p {
+  color: var(--very-dark-grayish-blue);
+}
+.card:nth-child(3) p:last-child, .card:nth-child(5) p:last-child {
+  color: gray;
+}
+.card:nth-child(4) {
+  background-color: var(--very-dark-blackish-blue);
+}
+.card__user {
+  display: flex;
+  align-items: center;
+}
+.card__user-img {
+  border: 1px solid var(--light-gray);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+.card__user-name p {
+  margin: 0;
+  color: var(--light-gray);
+}
+.card__user-name p:last-child {
+  color: var(--light-gray);
+  /* opacar */
+  opacity: 0.5;
+  font-size: 11px;
+}
+.card__testimonial-title {
+  color: var(--light-grayish-blue);
+}
+.card__testimonial-paragraph {
+  color: var(--light-gray);
+  /* opacar */
+  opacity: 0.7;
 }
 
 .attribution {
