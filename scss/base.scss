@@ -8,3 +8,9 @@ body {
     padding: 1rem;
     background-color: var(--light-grayish-blue);
 }
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1.5rem;
+}
