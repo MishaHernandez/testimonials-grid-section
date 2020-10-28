@@ -3,9 +3,19 @@
     padding: 1.5rem 2rem;
     border-radius: 8px;
     box-shadow: 1rem 8px 1.5rem rgba(207, 207, 207, .5);
+    transform: translateY(0);
+    transition: transform .3s;
 
     grid-column: 1/-1;
-
+    
+    @include desktop {
+        &:hover {
+            transform: translateY(-6px);
+            box-shadow: 1rem 8px 1.5rem rgba(72, 85, 106, .4);
+            transition: transform .4s, box-shadow .6s;
+        }
+    }
+    
     // Card 1
     &:nth-child(1) {
         background-color: var(--moderate-violet);
